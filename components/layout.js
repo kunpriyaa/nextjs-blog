@@ -84,7 +84,9 @@ export default function Layout({ children, home }) {
             <strong>Name:</strong> Miss Kunpriyaa Chaiyavong<br />
             <strong>Education:</strong> Currently studying at <i>University of Phayao</i>, 
             Faculty of <strong>Information and Communication Technology</strong>, 
-            Major in Software Engineering, 2nd Year
+            Major in Software Engineering, 2nd Year<br />
+            <strong>GitHub:</strong> <a href="https://github.com/kunpriyaa" target="_blank" rel="noopener noreferrer">https://github.com/kunpriyaa</a><br />
+            <strong>Vercel:</strong> <a href="https://vercel.com/kunpriyaas-projects" target="_blank" rel="noopener noreferrer">https://vercel.com/kunpriyaas-projects</a>
           </p>
 
           <h3>Skills</h3>
