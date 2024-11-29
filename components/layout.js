@@ -82,9 +82,9 @@ export default function Layout({ children, home }) {
           <h3>Yourself Introduction</h3>
           <p>
             <strong>Student ID:</strong> 66024974<br />
-            <strong>Name:</strong> นางสาว กุลปรียา ไชยวงค์<br />
-            <strong>Education:</strong> กำลังศึกษาที่ <i>University of Phayao</i>, 
-            คณะ ICT, สาขา Software Engineering, ชั้นปีที่ 2
+            <strong>Name:</strong> Miss Kunpriyaa Chaiwong<br />
+            <strong>Education:</strong> Currently studying at <i>University of Phayao</i>, 
+            Faculty of Information and Communication Technology (ICT), Software Engineering, Year 2
           </p>
         </section>
 
