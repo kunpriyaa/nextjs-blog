@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   color: #333;
 }
 
@@ -14,9 +14,14 @@
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 3rem;
+  color: #1a73e8;
   font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
 main {
@@ -24,51 +29,59 @@ main {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
   color: #1a73e8;
+  text-align: center;
 }
 
-.projectContainer {
-  margin-bottom: 40px;
-  background-color: white;
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.projectItem {
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.projectContainer:hover {
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.projectItem:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.projectContainer h3 {
+.projectItem h3 {
   font-size: 1.5rem;
+  margin: 20px;
   color: #333;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 .figmaFrame {
   width: 100%;
-  height: 450px;
+  height: 400px;
+  border: none;
   border-radius: 8px;
-  border: 1px solid #ddd;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .figmaFrame:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
   .figmaFrame {
     height: 300px;
-  }
-}
-
-@media (max-width: 480px) {
-  .figmaFrame {
-    height: 250px;
   }
 }
