@@ -81,15 +81,12 @@ export default function Layout({ children, home }) {
           <h3>Yourself Introduction</h3>
           <p>
             <strong>Student ID:</strong> 66024974<br />
-            <strong>Name:</strong> นางสาว กุลปรียา ไชยวงค์<br />
-            <strong>Education:</strong> กำลังศึกษาที่ <i>University of Phayao</i>, 
-            คณะ <strong>Information and Communication Technology</strong>, 
-            สาขา Software Engineering, ชั้นปีที่ 2
+            <strong>Name:</strong> Miss Kunpriyaa Chaiyavong<br />
+            <strong>Education:</strong> Currently studying at <i>University of Phayao</i>, 
+            Faculty of <strong>Information and Communication Technology</strong>, 
+            Major in Software Engineering, 2nd Year
           </p>
-        </section>
 
-        {/* Skills Section */}
-        <section className={styles.personalInfo}>
           <h3>Skills</h3>
           <ul>
             <li>JavaScript, TypeScript</li>
