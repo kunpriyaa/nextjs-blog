@@ -118,7 +118,7 @@ export default function Layout({ children, home }) {
               <h4>Project 2</h4>
               <iframe
                 className={styles.figmaFrame}
-                src="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree?node-id=0-1&embed-host=share"
+                src="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill?node-id=0-1&embed-host=share"
                 allowFullScreen
               ></iframe>
             </div>
