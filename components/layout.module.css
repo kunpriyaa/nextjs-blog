@@ -1,91 +1,69 @@
-/* layout.module.css */
-
 .container {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #f7f7f7;
-  color: #333;
+  padding: 1.5rem;
+  background: #e0f7fa; /* พื้นหลังสีฟ้าอ่อน */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #1a73e8;
-  font-weight: bold;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-main {
+.mainContent {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ffffff; /* เพิ่มพื้นหลังสีขาวสำหรับเนื้อหาหลัก */
   padding: 20px;
+  border-radius: 10px;
 }
 
 .personalInfo {
-  margin-bottom: 40px;
+  background-color: #ffffff; /* พื้นหลังสีขาว */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .personalInfo h3 {
-  font-size: 2.5rem;
-  color: #1a73e8;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  color: #00796b; /* สีเขียวเข้ม */
 }
 
 .personalInfo p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
 }
 
-.projectsSection {
-  margin-top: 40px;
+.personalInfo ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.projectsSection h3 {
-  font-size: 2.5rem;
-  color: #1a73e8;
-  margin-bottom: 30px;
+.personalInfo ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
-.projectsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.backToHome {
+  margin-top: 3rem;
+  text-align: center;
 }
 
-.projectItem {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+.backToHome a {
+  color: #0070f3;
+  text-decoration: none;
 }
 
-.projectItem h4 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.figmaFrame {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 8px;
-}
-
-.projectItem:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .projectsGrid {
-    grid-template-columns: 1fr;
-  }
+.backToHome a:hover {
+  text-decoration: underline;
 }
