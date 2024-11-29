@@ -33,13 +33,17 @@ export default function Layout({ children, home }) {
       </header>
 
       <main className={styles.mainContent}>
+        {/* Your Self Introduction Section */}
         <section className={styles.introduction}>
           <h2>Yourself Introduction</h2>
-          <p><strong>Student ID:</strong> 66024974</p>
-          <p><strong>Name:</strong> Miss Kunpriyaa Chaiyong</p>
-          <p><strong>Education:</strong> Currently studying at the University of Phayao, Faculty of ICT, Software Engineering, Year 2</p>
+          <div className={styles.introContent}>
+            <p><strong>Student ID:</strong> 66024974</p>
+            <p><strong>Name:</strong> Miss Kunpriyaa Chaiyong</p>
+            <p><strong>Education:</strong> Currently studying at the University of Phayao, Faculty of Information and Communication Technology, Software Engineering, Year 2</p>
+          </div>
         </section>
 
+        {/* Figma Project Showcase Section */}
         <section className={styles.projectsSection}>
           <h2>Figma Project Showcase</h2>
 
