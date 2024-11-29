@@ -12,7 +12,6 @@ export const siteTitle = 'Next.js Sample Website';
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
-      {/* Meta Tags */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -28,17 +27,13 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
-      {/* Script Loading */}
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
         strategy="lazyOnload"
         onLoad={() =>
-          console.log(`Script loaded correctly, window.FB has been populated`)
+          console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-
-      {/* Header Section */}
       <header className={styles.header}>
         {home ? (
           <>
@@ -72,11 +67,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-
-      {/* Main Content */}
-      <main className={styles.mainContent}>{children}</main>
-
-      {/* Footer */}
+      <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
@@ -85,4 +76,3 @@ export default function Layout({ children, home }) {
     </div>
   );
 }
-
