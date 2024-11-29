@@ -96,6 +96,7 @@ export default function Layout({ children, home }) {
             <li>Node.js, Express</li>
             <li>Database: MySQL, MongoDB</li>
             <li>Version Control: Git, GitHub</li>
+            <li>Design Tools: Figma (UX/UI Wireframe Design)</li>
           </ul>
         </section>
 
