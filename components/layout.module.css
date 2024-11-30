@@ -29,7 +29,7 @@
   padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
-  background-color: #f05454;
+  background-color: #464242;
   border: none;
   color: white;
   cursor: pointer;
@@ -37,7 +37,7 @@
 }
 
 .toggleButton:hover {
-  background-color: #d94747;
+  background-color: #464242;
 }
 
 .sectionContent {
@@ -92,6 +92,6 @@
 
 .card:hover {
   transform: translateY(-5px);
-  background-color: #f05454;
+  background-color: #f82537;
   color: white;
 }
