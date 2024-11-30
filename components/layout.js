@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
+
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
@@ -93,19 +94,23 @@ export default function Layout({ children, home }) {
           <ul className={styles.skillList}>
             <li>
               <img src="/images/javascript-icon.jpg" alt="JavaScript" className={styles.skillIcon} />
-              JavaScript <div className={styles.skillBar} style={{ width: '50%' }}></div>
+              JavaScript
+              <span className={styles.skillBar} style={{ width: '50%' }}></span>
             </li>
             <li>
               <img src="/images/next-js-logo.png" alt="Next.js" className={styles.skillIcon} />
-              Next.js <div className={styles.skillBar} style={{ width: '40%' }}></div>
+              Next.js
+              <span className={styles.skillBar} style={{ width: '40%' }}></span>
             </li>
             <li>
               <img src="/images/database-mysql-icon.png" alt="MySQL" className={styles.skillIcon} />
-              MySQL <div className={styles.skillBar} style={{ width: '60%' }}></div>
+              MySQL
+              <span className={styles.skillBar} style={{ width: '60%' }}></span>
             </li>
             <li>
               <img src="/images/figma.png" alt="Figma" className={styles.skillIcon} />
-              Figma <div className={styles.skillBar} style={{ width: '75%' }}></div>
+              Figma
+              <span className={styles.skillBar} style={{ width: '75%' }}></span>
             </li>
           </ul>
         </section>
