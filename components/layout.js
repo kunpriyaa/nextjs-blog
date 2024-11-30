@@ -98,7 +98,7 @@ export default function Layout({ children, home }) {
                 <span>JavaScript</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '50%' }}></div>
+                <div className={styles.progressBar} style={{ width: '40%' }}></div>
               </div>
             </li>
             <li className={styles.skillItem}>
@@ -107,7 +107,7 @@ export default function Layout({ children, home }) {
                 <span>Next.js</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '40%' }}></div>
+                <div className={styles.progressBar} style={{ width: '35%' }}></div>
               </div>
             </li>
             <li className={styles.skillItem}>
@@ -116,7 +116,7 @@ export default function Layout({ children, home }) {
                 <span>MySQL</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '60%' }}></div>
+                <div className={styles.progressBar} style={{ width: '50%' }}></div>
               </div>
             </li>
             <li className={styles.skillItem}>
@@ -125,7 +125,7 @@ export default function Layout({ children, home }) {
                 <span>Figma</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '75%' }}></div>
+                <div className={styles.progressBar} style={{ width: '60%' }}></div>
               </div>
             </li>
           </ul>
