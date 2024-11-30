@@ -28,16 +28,16 @@
 
 .progressContainer {
   background-color: #e0e0e0;
-  width: 50%; /* สั้นลงโดยการปรับความกว้าง */
-  height: 12px; /* ทำให้ขีดอ้วนขึ้น */
+  width: 50%; 
+  height: 12px; 
   border-radius: 3px;
   overflow: hidden;
-  margin-left: 15px; /* ขยับขีดห่างจากตัวอักษร */
+  margin-left: 15px; 
 }
 
 .progressBar {
   height: 100%;
-  background-color: #4caf50;
+  background-color: #000000;
 }
 
 .projectsSection {
