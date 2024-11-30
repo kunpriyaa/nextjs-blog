@@ -94,32 +94,40 @@ export default function Layout({ children, home }) {
           <ul className={styles.skillsList}>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image src="/images/javascript-logo.png" alt="JavaScript" width={40} height={40} />
+                <Image src="/images/javascript-icon.jpg" alt="JavaScript" width={40} height={40} />
                 <span>JavaScript</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '90%' }}></div>
+                <div className={styles.progressBar} style={{ width: '50%' }}></div>
               </div>
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image src="/images/typescript-logo.png" alt="TypeScript" width={40} height={40} />
-                <span>TypeScript</span>
+                <Image src="/images/next-js-logo.png" alt="Next.js" width={40} height={40} />
+                <span>Next.js</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '80%' }}></div>
+                <div className={styles.progressBar} style={{ width: '40%' }}></div>
               </div>
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image src="/images/react-logo.png" alt="React" width={40} height={40} />
-                <span>React</span>
+                <Image src="/images/database-mysql-icon.png" alt="MySQL" width={40} height={40} />
+                <span>MySQL</span>
               </div>
               <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '85%' }}></div>
+                <div className={styles.progressBar} style={{ width: '60%' }}></div>
               </div>
             </li>
-            {/* Add more skills here */}
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image src="/images/figma.png" alt="Figma" width={40} height={40} />
+                <span>Figma</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '75%' }}></div>
+              </div>
+            </li>
           </ul>
         </section>
 
