@@ -31,18 +31,18 @@
 }
 
 .projectItem {
-  background: #ffffff;
-  border: 1px solid #eaeaea;
+  background: #fafafa; 
+  border: 1px solid #eaeaea; 
   border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .projectItem:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background-color: #f0f0f0; 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+  background-color: #f1f1f1; 
 }
 
 .projectItem:hover .projectTitle {
