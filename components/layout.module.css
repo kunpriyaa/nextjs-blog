@@ -1,16 +1,4 @@
 .container {
-  padding: 0 2rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4rem 0;
-}
-
-.mainContent {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -28,20 +16,23 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  gap: 15px; /* เพิ่มช่องว่างระหว่างคำและขีด */
 }
 
 .skillInfo {
   display: flex;
   align-items: center;
   margin-right: 10px;
+  gap: 10px; /* ช่องว่างระหว่างไอคอนกับชื่อทักษะ */
 }
 
 .progressContainer {
   background-color: #e0e0e0;
-  width: 100%;
-  height: 6px;
+  width: 50%; /* สั้นลงโดยการปรับความกว้าง */
+  height: 12px; /* ทำให้ขีดอ้วนขึ้น */
   border-radius: 3px;
   overflow: hidden;
+  margin-left: 15px; /* ขยับขีดห่างจากตัวอักษร */
 }
 
 .progressBar {
@@ -55,41 +46,28 @@
 
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .projectItem {
-  background-color: #f9f9f9;
   padding: 1rem;
+  background-color: #f5f5f5;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .projectTitle {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .projectLink {
   color: #0070f3;
   text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
 }
 
 .projectLink:hover {
-  text-decoration: underline;
-}
-
-.backToHome {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.backToHome a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.backToHome a:hover {
   text-decoration: underline;
 }

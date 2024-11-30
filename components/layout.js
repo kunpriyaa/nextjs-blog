@@ -93,12 +93,7 @@ export default function Layout({ children, home }) {
           <ul className={styles.skillsList}>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image
-                  src="/images/javascript-icon.jpg"
-                  alt="JavaScript"
-                  width={30}
-                  height={30}
-                />
+                <Image src="/images/javascript-icon.jpg" alt="JavaScript" width={24} height={24} />
                 <span>JavaScript</span>
               </div>
               <div className={styles.progressContainer}>
@@ -107,12 +102,7 @@ export default function Layout({ children, home }) {
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image
-                  src="/images/next-js-logo.png"
-                  alt="Next.js"
-                  width={30}
-                  height={30}
-                />
+                <Image src="/images/next-js-logo.png" alt="Next.js" width={24} height={24} />
                 <span>Next.js</span>
               </div>
               <div className={styles.progressContainer}>
@@ -121,12 +111,7 @@ export default function Layout({ children, home }) {
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image
-                  src="/images/database-mysql-icon.png"
-                  alt="MySQL"
-                  width={30}
-                  height={30}
-                />
+                <Image src="/images/database-mysql-icon.png" alt="MySQL" width={24} height={24} />
                 <span>MySQL</span>
               </div>
               <div className={styles.progressContainer}>
@@ -135,12 +120,7 @@ export default function Layout({ children, home }) {
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image
-                  src="/images/figma.png"
-                  alt="Figma"
-                  width={30}
-                  height={30}
-                />
+                <Image src="/images/figma.png" alt="Figma" width={24} height={24} />
                 <span>Figma</span>
               </div>
               <div className={styles.progressContainer}>
