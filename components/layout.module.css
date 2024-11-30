@@ -1,3 +1,9 @@
+body {
+  background-color: #e0f7fa; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
