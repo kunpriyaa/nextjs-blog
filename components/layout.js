@@ -1,85 +1,36 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Script from 'next/script';
-
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
 
-const name = '[Kunpriyaa]';
-export const siteTitle = 'Next.js Sample Website';
-
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className={styles.container}>
-      {/* Meta Tags */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
         />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <title>Kunpriyaa's Portfolio</title>
       </Head>
 
-      {/* Script Loading */}
-      <Script
-        src="https://connect.facebook.net/en_US/sdk.js"
-        strategy="lazyOnload"
-        onLoad={() =>
-          console.log(`Script loaded correctly, window.FB has been populated`)
-        }
-      />
-
-      {/* Header Section */}
       <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/Image.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/Image.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt={name}
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
+        <Image
+          priority
+          src="/images/Image.jpg"
+          className={utilStyles.borderCircle}
+          height={144}
+          width={144}
+          alt="Kunpriyaa"
+        />
+        <h1 className={utilStyles.heading2Xl}>Kunpriyaa's Portfolio</h1>
       </header>
 
-      {/* Main Content */}
-      <main className={styles.mainContent}>
-        {children}
-
+      <main>
         {/* Yourself Introduction Section */}
         <section className={styles.personalInfo}>
-          <h3>Yourself Introduction</h3>
+          <h2>Yourself Introduction</h2>
           <p>
             <strong>Student ID:</strong> 66024974<br />
             <strong>Name:</strong> Miss Kunpriyaa Chaiyavong<br />
@@ -93,7 +44,7 @@ export default function Layout({ children, home }) {
 
         {/* Skills Section */}
         <section className={styles.skillsSection}>
-          <h3>Skills</h3>
+          <h2>Skills</h2>
           <ul>
             <li>
               <Image
@@ -148,15 +99,14 @@ export default function Layout({ children, home }) {
 
         {/* Figma Projects Section */}
         <section className={styles.projectsSection}>
-          <h3>My Figma Projects</h3>
+          <h2>My Figma Projects</h2>
           <div className={styles.projectsGrid}>
             {/* Project 1 */}
             <div className={styles.projectCard}>
-              <h4 className={styles.projectTitle}>Project 1: Personal Portfolio</h4>
+              <h3>Project 1: Personal Portfolio</h3>
               <p>A prototype for a personal portfolio design showcasing skills and projects.</p>
               <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/proto/6ikLfb0JnMkyE5yJAG1fbu/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B8%A7%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F"
+                href="https://embed.figma.com/proto/6ikLfb0JnMkyE5yJAG1fbu"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -166,11 +116,10 @@ export default function Layout({ children, home }) {
 
             {/* Project 2 */}
             <div className={styles.projectCard}>
-              <h4 className={styles.projectTitle}>Project 2: Selling Tree App</h4>
+              <h3>Project 2: Selling Tree App</h3>
               <p>An e-commerce platform for selling plants and gardening tools.</p>
               <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree"
+                href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -180,11 +129,10 @@ export default function Layout({ children, home }) {
 
             {/* Project 3 */}
             <div className={styles.projectCard}>
-              <h4 className={styles.projectTitle}>Project 3: Plant App Design</h4>
+              <h3>Project 3: Plant App Design</h3>
               <p>An app designed to help users learn about and care for indoor plants.</p>
               <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill"
+                href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,11 +142,10 @@ export default function Layout({ children, home }) {
 
             {/* Project 4 */}
             <div className={styles.projectCard}>
-              <h4 className={styles.projectTitle}>Project 4: Health App UI</h4>
+              <h3>Project 4: Health App UI</h3>
               <p>A conceptual design for a health and fitness tracking app.</p>
               <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951"
+                href="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -208,13 +155,6 @@ export default function Layout({ children, home }) {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
     </div>
   );
 }
