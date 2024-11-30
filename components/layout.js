@@ -89,28 +89,59 @@ export default function Layout({ children, home }) {
             <strong>GitHub:</strong> <a href="https://github.com/kunpriyaa" target="_blank" rel="noopener noreferrer">https://github.com/kunpriyaa</a><br />
             <strong>Vercel:</strong> <a href="https://vercel.com/kunpriyaas-projects" target="_blank" rel="noopener noreferrer">https://vercel.com/kunpriyaas-projects</a>
           </p>
+        </section>
 
+        {/* Skills Section */}
+        <section className={styles.skillsSection}>
           <h3>Skills</h3>
-          <ul className={styles.skillList}>
+          <ul>
             <li>
-              <img src="/images/javascript-icon.jpg" alt="JavaScript" className={styles.skillIcon} />
-              JavaScript
-              <span className={styles.skillBar} style={{ width: '50%' }}></span>
+              <Image
+                src="/images/javascript-icon.jpg"
+                alt="JavaScript Icon"
+                width={20}
+                height={20}
+              />
+              <span>JavaScript</span>
+              <div className={styles.skillBar}>
+                <div className={styles.skillJavaScript}></div>
+              </div>
             </li>
             <li>
-              <img src="/images/next-js-logo.png" alt="Next.js" className={styles.skillIcon} />
-              Next.js
-              <span className={styles.skillBar} style={{ width: '40%' }}></span>
+              <Image
+                src="/images/next-js-logo.png"
+                alt="Next.js Logo"
+                width={20}
+                height={20}
+              />
+              <span>Next.js</span>
+              <div className={styles.skillBar}>
+                <div className={styles.skillNextJs}></div>
+              </div>
             </li>
             <li>
-              <img src="/images/database-mysql-icon.png" alt="MySQL" className={styles.skillIcon} />
-              MySQL
-              <span className={styles.skillBar} style={{ width: '60%' }}></span>
+              <Image
+                src="/images/database-mysql-icon.png"
+                alt="MySQL Icon"
+                width={20}
+                height={20}
+              />
+              <span>MySQL</span>
+              <div className={styles.skillBar}>
+                <div className={styles.skillMySQL}></div>
+              </div>
             </li>
             <li>
-              <img src="/images/figma.png" alt="Figma" className={styles.skillIcon} />
-              Figma
-              <span className={styles.skillBar} style={{ width: '75%' }}></span>
+              <Image
+                src="/images/figma.png"
+                alt="Figma Icon"
+                width={20}
+                height={20}
+              />
+              <span>Figma</span>
+              <div className={styles.skillBar}>
+                <div className={styles.skillFigma}></div>
+              </div>
             </li>
           </ul>
         </section>
