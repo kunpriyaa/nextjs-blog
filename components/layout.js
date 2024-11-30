@@ -7,13 +7,13 @@ export default function Layout() {
       {/* Profile Section */}
       <section className={styles.profileSection}>
         <Image
-          src="/images/profile.jpg" // แก้ไขเป็น Path ของรูปโปรไฟล์
+          src="/images/Image.jpg" // Path รูปใหม่
           alt="Profile Picture"
           width={150}
           height={150}
           className={styles.profileImage}
         />
-        <h1 className={styles.profileName}>Miss Kunpriyaa Chaiyavong</h1>
+        <h1 className={styles.profileName}>kunpriyaa</h1> {/* เปลี่ยนชื่อเป็น kunpriyaa */}
       </section>
 
       {/* Yourself Introduction */}
