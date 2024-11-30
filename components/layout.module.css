@@ -42,11 +42,11 @@
 .projectItem:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
 }
 
 .projectItem:hover .projectTitle {
-  color: #0070f3; 
+  color: #0070f3;
 }
 
 .projectTitle {
@@ -64,10 +64,46 @@
 }
 
 .projectLink:hover {
-  color: #005bb5; 
+  color: #005bb5;
   text-decoration: underline;
 }
 
 .backToHome {
   margin: 20px 0;
+}
+
+/* Skill Section Styles */
+.skillsSection {
+  margin-top: 20px;
+}
+
+.skillsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.skillInfo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.progressContainer {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
 }

@@ -76,6 +76,7 @@ export default function Layout({ children, home }) {
       {/* Main Content */}
       <main className={styles.mainContent}>
         {children}
+
         {/* Yourself Introduction Section */}
         <section className={styles.personalInfo}>
           <h3>Yourself Introduction</h3>
@@ -90,13 +91,35 @@ export default function Layout({ children, home }) {
           </p>
 
           <h3>Skills</h3>
-          <ul>
-            <li>JavaScript, TypeScript</li>
-            <li>React, Next.js</li>
-            <li>Node.js, Express</li>
-            <li>Database: MySQL, MongoDB</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Design Tools: Figma (UX/UI Wireframe Design)</li>
+          <ul className={styles.skillsList}>
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image src="/images/javascript-logo.png" alt="JavaScript" width={40} height={40} />
+                <span>JavaScript</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '90%' }}></div>
+              </div>
+            </li>
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image src="/images/typescript-logo.png" alt="TypeScript" width={40} height={40} />
+                <span>TypeScript</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '80%' }}></div>
+              </div>
+            </li>
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image src="/images/react-logo.png" alt="React" width={40} height={40} />
+                <span>React</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '85%' }}></div>
+              </div>
+            </li>
+            {/* Add more skills here */}
           </ul>
         </section>
 
@@ -118,47 +141,7 @@ export default function Layout({ children, home }) {
               </a>
             </div>
 
-            {/* Project 2 */}
-            <div className={styles.projectItem}>
-              <h4 className={styles.projectTitle}>Project 2: Selling Tree App</h4>
-              <p>An e-commerce platform for selling plants and gardening tools.</p>
-              <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Project
-              </a>
-            </div>
-
-            {/* Project 3 */}
-            <div className={styles.projectItem}>
-              <h4 className={styles.projectTitle}>Project 3: Plant App Design</h4>
-              <p>An app designed to help users learn about and care for indoor plants.</p>
-              <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Project
-              </a>
-            </div>
-
-            {/* Project 4 */}
-            <div className={styles.projectItem}>
-              <h4 className={styles.projectTitle}>Project 4: Health App UI</h4>
-              <p>A conceptual design for a health and fitness tracking app.</p>
-              <a
-                className={styles.projectLink}
-                href="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Project
-              </a>
-            </div>
+            {/* Add more projects */}
           </div>
         </section>
       </main>
