@@ -90,42 +90,22 @@ export default function Layout({ children, home }) {
           </p>
 
           <h3>Skills</h3>
-          <ul className={styles.skillsList}>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/javascript-icon.jpg" alt="JavaScript" width={24} height={24} />
-                <span>JavaScript</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '50%' }}></div>
-              </div>
+          <ul className={styles.skillList}>
+            <li>
+              <img src="/images/javascript-icon.jpg" alt="JavaScript" className={styles.skillIcon} />
+              JavaScript <div className={styles.skillBar} style={{ width: '50%' }}></div>
             </li>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/next-js-logo.png" alt="Next.js" width={24} height={24} />
-                <span>Next.js</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '40%' }}></div>
-              </div>
+            <li>
+              <img src="/images/next-js-logo.png" alt="Next.js" className={styles.skillIcon} />
+              Next.js <div className={styles.skillBar} style={{ width: '40%' }}></div>
             </li>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/database-mysql-icon.png" alt="MySQL" width={24} height={24} />
-                <span>MySQL</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '60%' }}></div>
-              </div>
+            <li>
+              <img src="/images/database-mysql-icon.png" alt="MySQL" className={styles.skillIcon} />
+              MySQL <div className={styles.skillBar} style={{ width: '60%' }}></div>
             </li>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/figma.png" alt="Figma" width={24} height={24} />
-                <span>Figma</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '75%' }}></div>
-              </div>
+            <li>
+              <img src="/images/figma.png" alt="Figma" className={styles.skillIcon} />
+              Figma <div className={styles.skillBar} style={{ width: '75%' }}></div>
             </li>
           </ul>
         </section>
@@ -135,7 +115,7 @@ export default function Layout({ children, home }) {
           <h3>My Figma Projects</h3>
           <div className={styles.projectsGrid}>
             {/* Project 1 */}
-            <div className={styles.projectItem}>
+            <div className={styles.projectCard}>
               <h4 className={styles.projectTitle}>Project 1: Personal Portfolio</h4>
               <p>A prototype for a personal portfolio design showcasing skills and projects.</p>
               <a
@@ -149,7 +129,7 @@ export default function Layout({ children, home }) {
             </div>
 
             {/* Project 2 */}
-            <div className={styles.projectItem}>
+            <div className={styles.projectCard}>
               <h4 className={styles.projectTitle}>Project 2: Selling Tree App</h4>
               <p>An e-commerce platform for selling plants and gardening tools.</p>
               <a
@@ -163,7 +143,7 @@ export default function Layout({ children, home }) {
             </div>
 
             {/* Project 3 */}
-            <div className={styles.projectItem}>
+            <div className={styles.projectCard}>
               <h4 className={styles.projectTitle}>Project 3: Plant App Design</h4>
               <p>An app designed to help users learn about and care for indoor plants.</p>
               <a
@@ -177,7 +157,7 @@ export default function Layout({ children, home }) {
             </div>
 
             {/* Project 4 */}
-            <div className={styles.projectItem}>
+            <div className={styles.projectCard}>
               <h4 className={styles.projectTitle}>Project 4: Health App UI</h4>
               <p>A conceptual design for a health and fitness tracking app.</p>
               <a
