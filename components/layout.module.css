@@ -17,6 +17,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-top: 10px;
+  color: #333;
 }
 
 .toggleSection {
@@ -45,7 +46,6 @@
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .skillsList {
@@ -65,4 +65,33 @@
   display: block;
   width: 40px;
   height: 40px;
+}
+
+.projectsSection {
+  margin-top: 40px;
+}
+
+.sectionHeader {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: #ffe4e4;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #f05454;
+  color: white;
 }

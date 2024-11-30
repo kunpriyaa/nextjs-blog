@@ -18,10 +18,6 @@ export default function Layout() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Learn how to build a personal website using Next.js" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <header className={styles.header}>
         <Image
@@ -34,6 +30,7 @@ export default function Layout() {
         <h1 className={styles.profileName}>{name}</h1>
       </header>
       <main>
+        {/* Yourself Introduction Section */}
         <div className={styles.toggleSection}>
           <button
             className={styles.toggleButton}
@@ -67,11 +64,10 @@ export default function Layout() {
             </div>
           )}
         </div>
+
+        {/* Skills Section */}
         <div className={styles.toggleSection}>
-          <button
-            className={styles.toggleButton}
-            onClick={() => toggleSection('skills')}
-          >
+          <button className={styles.toggleButton} onClick={() => toggleSection('skills')}>
             Skills
           </button>
           {activeSection === 'skills' && (
@@ -112,6 +108,29 @@ export default function Layout() {
             </div>
           )}
         </div>
+
+        {/* Figma Projects */}
+        <section className={styles.projectsSection}>
+          <h2 className={styles.sectionHeader}>Figma Projects</h2>
+          <div className={styles.projectsGrid}>
+            <div className={styles.card}>
+              <h3>Project 1</h3>
+              <p>A project description goes here.</p>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 2</h3>
+              <p>A project description goes here.</p>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 3</h3>
+              <p>A project description goes here.</p>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 4</h3>
+              <p>A project description goes here.</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
