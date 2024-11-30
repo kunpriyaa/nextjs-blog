@@ -4,115 +4,65 @@
   padding: 20px;
 }
 
-/* Profile Section */
-.profileSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.profileImage {
-  border-radius: 50%;
-}
-
-.profileName {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.personalInfo {
-  margin-bottom: 40px;
-}
-
-.skillsSection ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skillsSection li {
-  display: flex;
-  align-items: center;
+.header {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.skillsSection li span {
+.profileImage {
+  border-radius: 8px;
+}
+
+.profileName {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.toggleSection {
+  margin-top: 20px;
+}
+
+.toggleButton {
+  width: 100%;
+  padding: 10px;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-left: 10px;
+  background-color: #f05454;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.skillBar {
-  width: 200px;
-  height: 15px;
-  background-color: #e0e0e0;
-  border-radius: 7px;
-  margin-left: 20px;
-  overflow: hidden;
+.toggleButton:hover {
+  background-color: #d94747;
 }
 
-.skillJavaScript {
-  width: 50%;
-  height: 100%;
-  background-color: #f7df1e;
+.sectionContent {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.skillNextJs {
-  width: 40%;
-  height: 100%;
-  background-color: #000;
+.skillsList {
+  list-style-type: none;
+  padding: 0;
 }
 
-.skillMySQL {
-  width: 60%;
-  height: 100%;
-  background-color: #4479a1;
+.skillsList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
-.skillFigma {
-  width: 75%;
-  height: 100%;
-  background-color: #f24e1e;
-}
-
-.projectsSection {
-  margin-top: 40px;
-}
-
-.projectsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.projectCard {
-  background-color: #facece;
-  padding: 16px;
-  border-radius: 12px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.projectCard:hover {
-  transform: scale(1.05);
-  background-color: #f0f0f0;
-}
-
-.projectCard h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.projectCard p {
-  margin: 10px 0;
-}
-
-.projectCard a {
-  color: #0070f3;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.projectCard a:hover {
-  text-decoration: underline;
+.skillsList img {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
