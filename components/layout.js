@@ -4,6 +4,18 @@ import styles from './layout.module.css';
 export default function Layout() {
   return (
     <div className={styles.container}>
+      {/* Profile Section */}
+      <section className={styles.profileSection}>
+        <Image
+          src="/images/profile.jpg" // แก้ไขเป็น Path ของรูปโปรไฟล์
+          alt="Profile Picture"
+          width={150}
+          height={150}
+          className={styles.profileImage}
+        />
+        <h1 className={styles.profileName}>Miss Kunpriyaa Chaiyavong</h1>
+      </section>
+
       {/* Yourself Introduction */}
       <section className={styles.personalInfo}>
         <h2>Yourself Introduction</h2>
@@ -22,7 +34,6 @@ export default function Layout() {
       <section className={styles.skillsSection}>
         <h2>Skills</h2>
         <ul>
-          {/* JavaScript */}
           <li>
             <Image
               src="/images/javascript-icon.jpg"
@@ -35,8 +46,6 @@ export default function Layout() {
               <div className={styles.skillJavaScript}></div>
             </div>
           </li>
-
-          {/* Next.js */}
           <li>
             <Image
               src="/images/next-js-logo.png"
@@ -49,8 +58,6 @@ export default function Layout() {
               <div className={styles.skillNextJs}></div>
             </div>
           </li>
-
-          {/* MySQL */}
           <li>
             <Image
               src="/images/database-mysql-icon.png"
@@ -63,8 +70,6 @@ export default function Layout() {
               <div className={styles.skillMySQL}></div>
             </div>
           </li>
-
-          {/* Figma */}
           <li>
             <Image
               src="/images/figma.png"
@@ -84,28 +89,21 @@ export default function Layout() {
       <section className={styles.projectsSection}>
         <h2>Figma Projects</h2>
         <div className={styles.projectsGrid}>
-          {/* Project 1 */}
           <div className={styles.projectCard}>
             <h3>Personal Portfolio</h3>
             <p>A prototype for a personal portfolio design showcasing skills and projects.</p>
             <a href="https://embed.figma.com/proto/6ikLfb0JnMkyE5yJAG1fbu" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
-
-          {/* Project 2 */}
           <div className={styles.projectCard}>
             <h3>Selling Tree App</h3>
             <p>An e-commerce platform for selling plants and gardening tools.</p>
             <a href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
-
-          {/* Project 3 */}
           <div className={styles.projectCard}>
             <h3>Plant App Design</h3>
             <p>An app designed to help users learn about and care for indoor plants.</p>
             <a href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg" target="_blank" rel="noopener noreferrer">View Project</a>
           </div>
-
-          {/* Project 4 */}
           <div className={styles.projectCard}>
             <h3>Health App UI</h3>
             <p>A conceptual design for a health and fitness tracking app.</p>
