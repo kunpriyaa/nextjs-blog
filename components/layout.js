@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/Image.jpg" // แก้ไขเส้นทางรูปภาพ
+              src="/images/Image.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -57,7 +57,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/Image.jpg" // แก้ไขเส้นทางรูปภาพ
+                src="/images/Image.jpg"
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
@@ -106,42 +106,58 @@ export default function Layout({ children, home }) {
           <div className={styles.projectsGrid}>
             {/* Project 1 */}
             <div className={styles.projectItem}>
-              <h4>Project 1</h4>
-              <iframe
-                className={styles.figmaFrame}
-                src="https://embed.figma.com/proto/6ikLfb0JnMkyE5yJAG1fbu/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B8%A7%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F?node-id=3-1049&node-type=canvas&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1049&share=1&embed-host=share"
-                allowFullScreen
-              ></iframe>
+              <h4 className={styles.projectTitle}>Project 1: Personal Portfolio</h4>
+              <p>A prototype for a personal portfolio design showcasing skills and projects.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/proto/6ikLfb0JnMkyE5yJAG1fbu/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B8%A7%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
 
             {/* Project 2 */}
             <div className={styles.projectItem}>
-              <h4>Project 2</h4>
-              <iframe
-                className={styles.figmaFrame}
-                src="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree?node-id=0-1&embed-host=share"
-                allowFullScreen
-              ></iframe>
+              <h4 className={styles.projectTitle}>Project 2: Selling Tree App</h4>
+              <p>An e-commerce platform for selling plants and gardening tools.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
 
             {/* Project 3 */}
             <div className={styles.projectItem}>
-              <h4>Project 3</h4>
-              <iframe
-                className={styles.figmaFrame}
-                src="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill?node-id=0-1&embed-host=share"
-                allowFullScreen
-              ></iframe>
+              <h4 className={styles.projectTitle}>Project 3: Plant App Design</h4>
+              <p>An app designed to help users learn about and care for indoor plants.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
 
             {/* Project 4 */}
             <div className={styles.projectItem}>
-              <h4>Project 4</h4>
-              <iframe
-                className={styles.figmaFrame}
-                src="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951?node-id=0-1&embed-host=share"
-                allowFullScreen
-              ></iframe>
+              <h4 className={styles.projectTitle}>Project 4: Health App UI</h4>
+              <p>A conceptual design for a health and fitness tracking app.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
             </div>
           </div>
         </section>
