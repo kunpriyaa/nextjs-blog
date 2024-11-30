@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Script from 'next/script';
-
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
@@ -94,26 +93,13 @@ export default function Layout({ children, home }) {
           <ul className={styles.skillsList}>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image src="/images/javascript-icon.jpg" alt="JavaScript" width={40} height={40} />
+                <Image
+                  src="/images/javascript-icon.jpg"
+                  alt="JavaScript"
+                  width={30}
+                  height={30}
+                />
                 <span>JavaScript</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '40%' }}></div>
-              </div>
-            </li>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/next-js-logo.png" alt="Next.js" width={40} height={40} />
-                <span>Next.js</span>
-              </div>
-              <div className={styles.progressContainer}>
-                <div className={styles.progressBar} style={{ width: '35%' }}></div>
-              </div>
-            </li>
-            <li className={styles.skillItem}>
-              <div className={styles.skillInfo}>
-                <Image src="/images/database-mysql-icon.png" alt="MySQL" width={40} height={40} />
-                <span>MySQL</span>
               </div>
               <div className={styles.progressContainer}>
                 <div className={styles.progressBar} style={{ width: '50%' }}></div>
@@ -121,11 +107,44 @@ export default function Layout({ children, home }) {
             </li>
             <li className={styles.skillItem}>
               <div className={styles.skillInfo}>
-                <Image src="/images/figma.png" alt="Figma" width={40} height={40} />
-                <span>Figma</span>
+                <Image
+                  src="/images/next-js-logo.png"
+                  alt="Next.js"
+                  width={30}
+                  height={30}
+                />
+                <span>Next.js</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '40%' }}></div>
+              </div>
+            </li>
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image
+                  src="/images/database-mysql-icon.png"
+                  alt="MySQL"
+                  width={30}
+                  height={30}
+                />
+                <span>MySQL</span>
               </div>
               <div className={styles.progressContainer}>
                 <div className={styles.progressBar} style={{ width: '60%' }}></div>
+              </div>
+            </li>
+            <li className={styles.skillItem}>
+              <div className={styles.skillInfo}>
+                <Image
+                  src="/images/figma.png"
+                  alt="Figma"
+                  width={30}
+                  height={30}
+                />
+                <span>Figma</span>
+              </div>
+              <div className={styles.progressContainer}>
+                <div className={styles.progressBar} style={{ width: '75%' }}></div>
               </div>
             </li>
           </ul>
@@ -149,7 +168,47 @@ export default function Layout({ children, home }) {
               </a>
             </div>
 
-            {/* Add more projects */}
+            {/* Project 2 */}
+            <div className={styles.projectItem}>
+              <h4 className={styles.projectTitle}>Project 2: Selling Tree App</h4>
+              <p>An e-commerce platform for selling plants and gardening tools.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </div>
+
+            {/* Project 3 */}
+            <div className={styles.projectItem}>
+              <h4 className={styles.projectTitle}>Project 3: Plant App Design</h4>
+              <p>An app designed to help users learn about and care for indoor plants.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </div>
+
+            {/* Project 4 */}
+            <div className={styles.projectItem}>
+              <h4 className={styles.projectTitle}>Project 4: Health App UI</h4>
+              <p>A conceptual design for a health and fitness tracking app.</p>
+              <a
+                className={styles.projectLink}
+                href="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </div>
           </div>
         </section>
       </main>
