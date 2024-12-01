@@ -60,34 +60,32 @@
 
 .skillBar {
   height: 10px;
-  background-color: #000;
+  background-color: #ccc;
+  margin-top: 5px;
   border-radius: 5px;
 }
 
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
 .projectCard {
-  background: #ffe5e5;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  padding: 16px;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.projectCard:hover {
-  transform: translateY(-10px);
-  background-color: #f7dcdc;
-}
-
-.projectCard iframe {
-  width: 100%;
-  border-radius: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
 }
 
 .projectCard h4 {
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 10px;
+}
+
+.projectCard iframe {
+  max-width: 100%;
+  border-radius: 8px;
 }
