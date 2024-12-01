@@ -60,7 +60,7 @@
 
 .skillBar {
   height: 30px; 
-  background-color: #f0f0f0; 
+  background-color: #191b9b; 
   margin-top: 5px;
   border-radius: 5px;
   width: 100%; 
@@ -69,12 +69,12 @@
 
 .skillBar span {
   display: block;
-  background-color: #232c79; 
+  background-color: #191b9b; 
   height: 100%;
   border-radius: 5px;
   position: absolute;
-  right: 0; 
-  width: 40%; 
+  left: 0; 
+  width: 45%; 
 }
 
 .projectsGrid {
@@ -94,7 +94,7 @@
 
 .projectCard:hover {
   transform: translateY(-5px);
-  background-color: #f78790; 
+  background-color: #fa777d; 
 }
 
 .projectCard h4 {
