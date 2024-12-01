@@ -13,7 +13,10 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Learn how to build a personal website using Next.js" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
         <meta property="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -36,19 +39,25 @@ export default function Layout({ children, home }) {
 
       <nav className={styles.nav}>
         <button
-          className={`${styles.navButton} ${activeTab === 'Yourself Introduction' ? styles.activeButton : ''}`}
+          className={`${styles.navButton} ${
+            activeTab === 'Yourself Introduction' ? styles.activeButton : ''
+          }`}
           onClick={() => setActiveTab('Yourself Introduction')}
         >
           Yourself Introduction
         </button>
         <button
-          className={`${styles.navButton} ${activeTab === 'Skills' ? styles.activeButton : ''}`}
+          className={`${styles.navButton} ${
+            activeTab === 'Skills' ? styles.activeButton : ''
+          }`}
           onClick={() => setActiveTab('Skills')}
         >
           Skills
         </button>
         <button
-          className={`${styles.navButton} ${activeTab === 'Figma Projects' ? styles.activeButton : ''}`}
+          className={`${styles.navButton} ${
+            activeTab === 'Figma Projects' ? styles.activeButton : ''
+          }`}
           onClick={() => setActiveTab('Figma Projects')}
         >
           Figma Projects
@@ -62,16 +71,23 @@ export default function Layout({ children, home }) {
             <p>
               <strong>Student ID:</strong> 66024974<br />
               <strong>Name:</strong> Miss Kunpriyaa Chaiyavong<br />
-              <strong>Education:</strong> Currently studying at 
-              <i> University of Phayao</i>, Faculty of 
-              <strong> Information and Communication Technology</strong>, 
-              Major in Software Engineering, 2nd Year<br />
+              <strong>Education:</strong> Currently studying at{' '}
+              <i> University of Phayao</i>, Faculty of <strong> Information and Communication Technology</strong>, Major in Software Engineering, 2nd Year<br />
               <strong>GitHub:</strong>{' '}
-              <a href="https://github.com/kunpriyaa" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/kunpriyaa"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 https://github.com/kunpriyaa
-              </a><br />
+              </a>
+              <br />
               <strong>Vercel:</strong>{' '}
-              <a href="https://vercel.com/kunpriyaas-projects" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://vercel.com/kunpriyaas-projects"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 https://vercel.com/kunpriyaas-projects
               </a>
             </p>
@@ -83,24 +99,44 @@ export default function Layout({ children, home }) {
             <h3>Skills</h3>
             <ul className={styles.skillsList}>
               <li>
-                <Image src="/images/javascript-icon.jpg" width={50} height={50} alt="JavaScript Icon" />
+                <Image
+                  src="/images/javascript-icon.jpg"
+                  width={50}
+                  height={50}
+                  alt="JavaScript Icon"
+                />
                 <span>JavaScript</span>
-                <div className={styles.skillBar} style={{ width: '50%' }}></div>
-              </li>
-              <li>
-                <Image src="/images/next-js-logo.png" width={50} height={50} alt="Next.js Icon" />
-                <span>Next.js</span>
-                <div className={styles.skillBar} style={{ width: '40%' }}></div>
-              </li>
-              <li>
-                <Image src="/images/database-mysql-icon.png" width={50} height={50} alt="MySQL Icon" />
-                <span>MySQL</span>
                 <div className={styles.skillBar} style={{ width: '60%' }}></div>
               </li>
               <li>
-                <Image src="/images/figma.png" width={50} height={50} alt="Figma Icon" />
+                <Image
+                  src="/images/next-js-logo.png"
+                  width={50}
+                  height={50}
+                  alt="Next.js Icon"
+                />
+                <span>Next.js</span>
+                <div className={styles.skillBar} style={{ width: '50%' }}></div>
+              </li>
+              <li>
+                <Image
+                  src="/images/database-mysql-icon.png"
+                  width={50}
+                  height={50}
+                  alt="MySQL Icon"
+                />
+                <span>MySQL</span>
+                <div className={styles.skillBar} style={{ width: '70%' }}></div>
+              </li>
+              <li>
+                <Image
+                  src="/images/figma.png"
+                  width={50}
+                  height={50}
+                  alt="Figma Icon"
+                />
                 <span>Figma</span>
-                <div className={styles.skillBar} style={{ width: '75%' }}></div>
+                <div className={styles.skillBar} style={{ width: '80%' }}></div>
               </li>
             </ul>
           </section>
@@ -111,47 +147,43 @@ export default function Layout({ children, home }) {
             <h3>My Figma Projects</h3>
             <div className={styles.projectsGrid}>
               <div className={styles.projectCard}>
-                <h4>Online Coffee Shop</h4>
+                <h4>Coffee Shop Website</h4>
                 <iframe
-                  style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                  width="800"
-                  height="450"
                   src="https://embed.figma.com/design/6ikLfb0JnMkyE5yJAG1fbu/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%A3%E0%B8%A7%E0%B8%9A%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F?node-id=0-1&embed-host=share"
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
                   allowFullScreen
-                  title="Online Coffee Shop"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
                 <h4>Selling Tree Website</h4>
                 <iframe
-                  style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                  width="800"
-                  height="450"
                   src="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree?node-id=0-1&embed-host=share"
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
                   allowFullScreen
-                  title="Selling Tree Website"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
-                <h4>Plant App</h4>
+                <h4>Plant App Design</h4>
                 <iframe
-                  style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                  width="800"
-                  height="450"
                   src="https://embed.figma.com/design/ai0Zr528lI8RsLZJcoYVrm/Plant-App-the-sill-66024974?node-id=1810-144&embed-host=share"
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
                   allowFullScreen
-                  title="Plant App"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
                 <h4>Health App UI</h4>
                 <iframe
-                  style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
-                  width="800"
-                  height="450"
                   src="https://embed.figma.com/design/9oYVg0DlOhtTAYryJyZxK8/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%95?node-id=415-62&embed-host=share"
+                  width="100%"
+                  height="300"
+                  frameBorder="0"
                   allowFullScreen
-                  title="Health App UI"
                 ></iframe>
               </div>
             </div>
