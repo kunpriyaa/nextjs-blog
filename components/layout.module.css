@@ -2,7 +2,7 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #c8dcf7; 
+  background-color: #c7daf3; 
 }
 
 .header {
@@ -65,23 +65,28 @@
 }
 
 .skillBar {
-  height: 30px; 
+  height: 35px; 
   background-color: #f0f0f0; 
   margin-top: 5px;
   border-radius: 5px;
   width: 100%; 
   position: relative;
+  transition: width 0.5s ease-in-out; 
 }
 
 .skillBar::before {
   content: "";
   display: block;
-  background-color: #0b26a0; 
+  background-color: #23af5e; 
   height: 100%;
   border-radius: 5px;
   position: absolute;
   left: 0; 
-  width: 40%;
+  width: 35%; 
+}
+
+.skillsList li:hover .skillBar::before {
+  width: 100%; 
 }
 
 .projectsGrid {
@@ -100,8 +105,8 @@
 }
 
 .projectCard:hover {
-  transform: translateY(-5px);
-  background-color: #8dc6ec; 
+  transform: translateY(-5px); 
+  background-color: #eda5ff; 
 }
 
 .projectCard h4 {
@@ -113,4 +118,33 @@
 .projectCard iframe {
   max-width: 100%;
   border-radius: 8px;
+}
+
+.yourselfIntro, .skillsSection, .projectsSection {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.yourselfIntro:hover, .skillsSection:hover, .projectsSection:hover {
+  transform: translateY(-10px); 
+  background-color: #87a0f3; 
+}
+
+.yourselfIntro {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.skillsSection {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.projectsSection {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
 }
