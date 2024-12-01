@@ -1,181 +1,115 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
 import styles from './layout.module.css';
 
-const name = 'Kunpriyaa';
-const siteTitle = 'Kunpriyaa Portfolio';
-
-export default function Layout({ children }) {
-  const [showSection, setShowSection] = useState('');
-
-  const toggleSection = (section) => {
-    setShowSection(showSection === section ? '' : section);
-  };
-
+export default function Layout() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>{siteTitle}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      {/* Header */}
       <header className={styles.header}>
-        <Image
-          priority
-          src="/images/Image.jpg"
-          className={styles.profileImage}
-          height={144}
-          width={144}
-          alt={name}
-        />
-        <h1 className={styles.title}>{name}</h1>
+        <img src="/public/images/Image.jpg" alt="Profile" className={styles.profileImage} />
+        <h1>Kunpriyaa</h1>
       </header>
 
-      {/* Toggle Buttons */}
-      <div className={styles.toggleContainer}>
-        <button
-          className={styles.toggleButton}
-          onClick={() => toggleSection('introduction')}
-        >
-          Yourself Introduction
-        </button>
-        <button
-          className={styles.toggleButton}
-          onClick={() => toggleSection('skills')}
-        >
-          Skills
-        </button>
-      </div>
+      <nav className={styles.nav}>
+        <button onClick={() => showSection('intro')}>Yourself Introduction</button>
+        <button onClick={() => showSection('skills')}>Skills</button>
+        <button onClick={() => showSection('projects')}>Figma Projects</button>
+      </nav>
 
-      {/* Sections */}
-      {showSection === 'introduction' && (
-        <section className={styles.section}>
+      <main>
+        <section id="intro" className={styles.hidden}>
           <h2>Yourself Introduction</h2>
+          <p>Student ID: 66024974</p>
+          <p>Name: Miss Kunpriyaa Chaiyavong</p>
           <p>
-            <strong>Student ID:</strong> 66024974<br />
-            <strong>Name:</strong> Miss Kunpriyaa Chaiyavong<br />
-            <strong>Education:</strong> Currently studying at 
-            <i> University of Phayao</i>, Faculty of Information and Communication Technology, 
-            Major in Software Engineering, 2nd Year<br />
-            <strong>GitHub:</strong>{' '}
-            <a
-              href="https://github.com/kunpriyaa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://github.com/kunpriyaa
-            </a>
-            <br />
-            <strong>Vercel:</strong>{' '}
-            <a
-              href="https://vercel.com/kunpriyaas-projects"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://vercel.com/kunpriyaas-projects
-            </a>
+            Education: Currently studying at University of Phayao, Faculty of Information and
+            Communication Technology, Major in Software Engineering, 2nd Year
           </p>
+          <p>GitHub: <a href="https://github.com/kunpriyaa">kunpriyaa</a></p>
+          <p>Vercel: <a href="https://vercel.com/kunpriyaas-projects">kunpriyaas-projects</a></p>
         </section>
-      )}
 
-      {showSection === 'skills' && (
-        <section className={styles.section}>
+        <section id="skills" className={styles.hidden}>
           <h2>Skills</h2>
-          <div className={styles.skillItem}>
-            <Image
-              src="/images/javascript-icon.jpg"
-              alt="JavaScript"
-              width={50}
-              height={50}
-            />
-            <span>JavaScript</span>
-            <div className={styles.skillBar}>
-              <div className={styles.skillLevel} style={{ width: '50%' }}></div>
+          <div className={styles.skillsGrid}>
+            <div className={styles.skill}>
+              <img src="/public/images/javascript-icon.jpg" alt="JavaScript" />
+              <span>JavaScript</span>
+              <div className={styles.skillBar} style={{ width: '50%' }}></div>
             </div>
-          </div>
-          <div className={styles.skillItem}>
-            <Image
-              src="/images/next-js-logo.png"
-              alt="Next.js"
-              width={50}
-              height={50}
-            />
-            <span>Next.js</span>
-            <div className={styles.skillBar}>
-              <div className={styles.skillLevel} style={{ width: '40%' }}></div>
+            <div className={styles.skill}>
+              <img src="/public/images/next-js-logo.png" alt="Next.js" />
+              <span>Next.js</span>
+              <div className={styles.skillBar} style={{ width: '40%' }}></div>
             </div>
-          </div>
-          <div className={styles.skillItem}>
-            <Image
-              src="/images/database-mysql-icon.png"
-              alt="MySQL"
-              width={50}
-              height={50}
-            />
-            <span>MySQL</span>
-            <div className={styles.skillBar}>
-              <div className={styles.skillLevel} style={{ width: '60%' }}></div>
+            <div className={styles.skill}>
+              <img src="/public/images/database-mysql-icon.png" alt="MySQL" />
+              <span>MySQL</span>
+              <div className={styles.skillBar} style={{ width: '60%' }}></div>
             </div>
-          </div>
-          <div className={styles.skillItem}>
-            <Image
-              src="/images/figma.png"
-              alt="Figma"
-              width={50}
-              height={50}
-            />
-            <span>Figma</span>
-            <div className={styles.skillBar}>
-              <div className={styles.skillLevel} style={{ width: '75%' }}></div>
+            <div className={styles.skill}>
+              <img src="/public/images/figma.png" alt="Figma" />
+              <span>Figma</span>
+              <div className={styles.skillBar} style={{ width: '75%' }}></div>
             </div>
           </div>
         </section>
-      )}
 
-      {/* Figma Projects */}
-      <section className={styles.projectsSection}>
-        <h2>Figma Projects</h2>
-        <div className={styles.projectsGrid}>
-          <a
-            href="https://embed.figma.com/project1"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h3>Project 1</h3>
-            <p>Personal Portfolio Design</p>
-          </a>
-          <a
-            href="https://embed.figma.com/project2"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h3>Project 2</h3>
-            <p>Selling Tree App</p>
-          </a>
-          <a
-            href="https://embed.figma.com/project3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h3>Project 3</h3>
-            <p>Plant Care App Design</p>
-          </a>
-          <a
-            href="https://embed.figma.com/project4"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h3>Project 4</h3>
-            <p>Health App UI</p>
-          </a>
-        </div>
-      </section>
+        <section id="projects" className={styles.hidden}>
+          <h2>Figma Projects</h2>
+          <div className={styles.projectsGrid}>
+            <div className={styles.card}>
+              <h3>Project 1</h3>
+              <p>Selling Tree App</p>
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+                width="800"
+                height="450"
+                src="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree?node-id=0-1&embed-host=share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 2</h3>
+              <p>Personal Portfolio Design</p>
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+                width="800"
+                height="450"
+                src="https://embed.figma.com/design/ai0Zr528lI8RsLZJcoYVrm/Plant-App-the-sill-66024974?node-id=0-1&embed-host=share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 3</h3>
+              <p>Plant Care App Design</p>
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+                width="800"
+                height="450"
+                src="https://embed.figma.com/design/ai0Zr528lI8RsLZJcoYVrm/Plant-App-the-sill-66024974?node-id=0-1&embed-host=share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className={styles.card}>
+              <h3>Project 4</h3>
+              <p>Health App Design</p>
+              <iframe
+                style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+                width="800"
+                height="450"
+                src="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951?embed-host=share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
+}
+
+function showSection(id) {
+  document.querySelectorAll('section').forEach((section) => {
+    section.classList.add(styles.hidden);
+  });
+  document.getElementById(id).classList.remove(styles.hidden);
 }
