@@ -1,79 +1,84 @@
 .container {
-  font-family: 'Arial, sans-serif';
+  max-width: 960px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .profileImage {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 10px 0;
 }
 
 .nav {
-  margin-top: 20px;
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-button {
-  padding: 10px 20px;
+.navButton {
+  background-color: #e0e0e0;
   border: none;
-  background-color: #0070f3;
-  color: white;
-  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
-button:hover {
-  background-color: #005bb5;
+.activeButton {
+  background-color: #0070f3;
+  color: #fff;
 }
 
-.hidden {
-  display: none;
+.mainContent {
+  padding: 20px 0;
 }
 
-.skillsGrid,
-.projectsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.skillsList {
+  list-style: none;
+  padding: 0;
 }
 
-.skill {
+.skillsList li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-bottom: 15px;
 }
 
-.skill img {
-  width: 30px;
-  height: 30px;
+.skillsList span {
+  margin-left: 10px;
+  flex: 1;
 }
 
 .skillBar {
   height: 10px;
-  background-color: #0070f3;
+  background-color: #000;
   border-radius: 5px;
 }
 
-.card {
-  background-color: #ffecec;
-  padding: 15px;
-  border-radius: 10px;
-  transition: transform 0.2s, background-color 0.2s;
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  background-color: #ffb6b6;
+.projectCard {
+  background: #ffe5e5;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
-iframe {
-  border-radius: 10px;
+.projectCard:hover {
+  transform: translateY(-10px);
+  background-color: #f7dcdc;
 }
