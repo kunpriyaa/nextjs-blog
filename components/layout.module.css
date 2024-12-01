@@ -2,96 +2,93 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .profileImage {
   border-radius: 8px;
 }
 
-.profileName {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin-top: 10px;
-  color: #333;
+.title {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px 0;
 }
 
-.toggleSection {
-  margin-top: 20px;
+.toggleContainer {
+  margin: 20px 0;
 }
 
 .toggleButton {
-  width: 100%;
-  padding: 10px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #636691;
-  border: none;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #0070f3;
   color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .toggleButton:hover {
-  background-color: #636691;
+  background-color: #005bb5;
 }
 
-.sectionContent {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.section {
+  margin-top: 20px;
+  text-align: left;
 }
 
-.skillsList {
-  list-style-type: none;
-  padding: 0;
-}
-
-.skillsList li {
+.skillItem {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
-.skillsList img {
-  display: block;
-  width: 40px;
-  height: 40px;
+.skillItem span {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.skillBar {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 15px;
+  width: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.skillLevel {
+  background-color: #0070f3;
+  height: 100%;
 }
 
 .projectsSection {
   margin-top: 40px;
 }
 
-.sectionHeader {
-  font-size: 1.8rem;
-  color: #222;
-}
-
 .projectsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .card {
-  padding: 20px;
   background-color: #ffe4e4;
+  padding: 20px;
   border-radius: 8px;
   text-align: center;
-  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  background-color: #f82537;
+  background-color: #f05454;
   color: white;
 }
