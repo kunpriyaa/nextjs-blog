@@ -60,16 +60,17 @@
 
 .skillBar {
   height: 30px; 
-  background-color: #191b9b; 
+  background-color: #131da0; 
   margin-top: 5px;
   border-radius: 5px;
   width: 100%; 
   position: relative;
 }
 
-.skillBar span {
+.skillBar::before {
+  content: "";
   display: block;
-  background-color: #191b9b; 
+  background-color: #131da0; 
   height: 100%;
   border-radius: 5px;
   position: absolute;
@@ -94,7 +95,7 @@
 
 .projectCard:hover {
   transform: translateY(-5px);
-  background-color: #fa777d; 
+  background-color: #eb6969; 
 }
 
 .projectCard h4 {
