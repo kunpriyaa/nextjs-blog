@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from './layout.module.css';
-import Link from 'next/link';
 import { useState } from 'react';
 
 const name = 'Kunpriyaa';
@@ -14,14 +13,11 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Learn how to build a personal website using Next.js" />
         <meta property="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      
+
       <header className={styles.header}>
         {home && (
           <>
@@ -40,25 +36,19 @@ export default function Layout({ children, home }) {
 
       <nav className={styles.nav}>
         <button
-          className={`${styles.navButton} ${
-            activeTab === 'Yourself Introduction' ? styles.activeButton : ''
-          }`}
+          className={`${styles.navButton} ${activeTab === 'Yourself Introduction' ? styles.activeButton : ''}`}
           onClick={() => setActiveTab('Yourself Introduction')}
         >
           Yourself Introduction
         </button>
         <button
-          className={`${styles.navButton} ${
-            activeTab === 'Skills' ? styles.activeButton : ''
-          }`}
+          className={`${styles.navButton} ${activeTab === 'Skills' ? styles.activeButton : ''}`}
           onClick={() => setActiveTab('Skills')}
         >
           Skills
         </button>
         <button
-          className={`${styles.navButton} ${
-            activeTab === 'Figma Projects' ? styles.activeButton : ''
-          }`}
+          className={`${styles.navButton} ${activeTab === 'Figma Projects' ? styles.activeButton : ''}`}
           onClick={() => setActiveTab('Figma Projects')}
         >
           Figma Projects
@@ -77,20 +67,11 @@ export default function Layout({ children, home }) {
               <strong> Information and Communication Technology</strong>, 
               Major in Software Engineering, 2nd Year<br />
               <strong>GitHub:</strong>{' '}
-              <a
-                href="https://github.com/kunpriyaa"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/kunpriyaa" target="_blank" rel="noopener noreferrer">
                 https://github.com/kunpriyaa
-              </a>
-              <br />
+              </a><br />
               <strong>Vercel:</strong>{' '}
-              <a
-                href="https://vercel.com/kunpriyaas-projects"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://vercel.com/kunpriyaas-projects" target="_blank" rel="noopener noreferrer">
                 https://vercel.com/kunpriyaas-projects
               </a>
             </p>
@@ -102,42 +83,22 @@ export default function Layout({ children, home }) {
             <h3>Skills</h3>
             <ul className={styles.skillsList}>
               <li>
-                <Image
-                  src="/images/javascript-icon.jpg"
-                  width={50}
-                  height={50}
-                  alt="JavaScript Icon"
-                />
+                <Image src="/images/javascript-icon.jpg" width={50} height={50} alt="JavaScript Icon" />
                 <span>JavaScript</span>
                 <div className={styles.skillBar} style={{ width: '50%' }}></div>
               </li>
               <li>
-                <Image
-                  src="/images/next-js-logo.png"
-                  width={50}
-                  height={50}
-                  alt="Next.js Icon"
-                />
+                <Image src="/images/next-js-logo.png" width={50} height={50} alt="Next.js Icon" />
                 <span>Next.js</span>
                 <div className={styles.skillBar} style={{ width: '40%' }}></div>
               </li>
               <li>
-                <Image
-                  src="/images/database-mysql-icon.png"
-                  width={50}
-                  height={50}
-                  alt="MySQL Icon"
-                />
+                <Image src="/images/database-mysql-icon.png" width={50} height={50} alt="MySQL Icon" />
                 <span>MySQL</span>
                 <div className={styles.skillBar} style={{ width: '60%' }}></div>
               </li>
               <li>
-                <Image
-                  src="/images/figma.png"
-                  width={50}
-                  height={50}
-                  alt="Figma Icon"
-                />
+                <Image src="/images/figma.png" width={50} height={50} alt="Figma Icon" />
                 <span>Figma</span>
                 <div className={styles.skillBar} style={{ width: '75%' }}></div>
               </li>
@@ -154,9 +115,10 @@ export default function Layout({ children, home }) {
                 <iframe
                   src="https://embed.figma.com/design/ai0Zr528lI8RsLZJcoYVrm/Personal-Portfolio"
                   width="100%"
-                  height="300"
+                  height="400"
                   frameBorder="0"
                   allowFullScreen
+                  title="Personal Portfolio"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
@@ -164,9 +126,10 @@ export default function Layout({ children, home }) {
                 <iframe
                   src="https://embed.figma.com/design/LSqOwVcMMqb9maLG0xSorA/Group-7-%3A-Selling-Tree"
                   width="100%"
-                  height="300"
+                  height="400"
                   frameBorder="0"
                   allowFullScreen
+                  title="Selling Tree App"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
@@ -174,9 +137,10 @@ export default function Layout({ children, home }) {
                 <iframe
                   src="https://embed.figma.com/design/1u3qFyZeuFzwXUXSiyccjg/Plant-App-the-sill"
                   width="100%"
-                  height="300"
+                  height="400"
                   frameBorder="0"
                   allowFullScreen
+                  title="Plant App Design"
                 ></iframe>
               </div>
               <div className={styles.projectCard}>
@@ -184,9 +148,10 @@ export default function Layout({ children, home }) {
                 <iframe
                   src="https://embed.figma.com/design/5qg65RFgJymyTxKycIH5vf/%E0%B9%81%E0%B8%AD%E0%B8%9B%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B4%E0%B8%951"
                   width="100%"
-                  height="300"
+                  height="400"
                   frameBorder="0"
                   allowFullScreen
+                  title="Health App UI"
                 ></iframe>
               </div>
             </div>
