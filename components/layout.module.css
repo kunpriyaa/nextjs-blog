@@ -2,7 +2,7 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #aed4f5; 
+  background-color: #c8dcf7; 
 }
 
 .header {
@@ -12,10 +12,10 @@
 }
 
 .profileImage {
-  border-radius: 50%;
-  height: 180px; 
-  width: 180px; 
-  margin-right: 25px; 
+  border-radius: 8px; 
+  height: 190px; 
+  width: 190px; 
+  margin-right: 30px; 
   object-fit: cover; 
 }
 
@@ -76,7 +76,7 @@
 .skillBar::before {
   content: "";
   display: block;
-  background-color: #0e0c8f; 
+  background-color: #0b26a0; 
   height: 100%;
   border-radius: 5px;
   position: absolute;
@@ -101,7 +101,7 @@
 
 .projectCard:hover {
   transform: translateY(-5px);
-  background-color: #f89191; 
+  background-color: #8dc6ec; 
 }
 
 .projectCard h4 {
